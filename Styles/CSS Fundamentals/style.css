@@ -1,0 +1,22 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(160, 202, 239);
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  background: rgba(205, 130, 233, 0.5);
+  height: 80px;
+  width: 100%;
+}
+
+.logo {
+    color: rgb(5, 5, 104);
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+    background-color: azure
+    margin: ;
+    padding: ;
+}
