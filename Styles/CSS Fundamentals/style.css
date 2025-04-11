@@ -17,7 +17,7 @@ nav {
   font-weight: bold;
   line-height: 80px;
   /*background-color: azure;*/
-  margin: 0, 50px;
+  margin: 0 15px;
   /*padding: 10px, 30px;*/
 }
 
@@ -41,11 +41,57 @@ nav ul li a {
 a.active {
   background: rgb(160, 202, 239);
   /*color: white;*/
-  padding: 10px, 20px;
-  border-radius: 120px;
+  padding: 5px 18px;
+  border-radius: 50px;
 }
 
 #logo {
-  width: 35px;
-  margin: 0, 0, 0, 30px;
+  width: 33px;
+  margin: 0 0 -5px -5px;
+}
+
+.burger-button {
+  font-size: 30px;
+  color: rgb(5, 5, 104);
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .burger-button {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(5, 5, 104, 0.419);
+    /*backdrop-filter: blur;*/
+    height: 100vh;
+    text-align: center;
+    top: 60px;
+    left: -120%;
+    transition: all 1s;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 30px 0px;
+  }
+
+  nav li a {
+    font-size: 25px;
+    color: rgb(5, 5, 104);
+    text-transform: uppercase;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
