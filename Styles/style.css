@@ -1,6 +1,11 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-image: url(../Styles/images/stars\\(1\).jpg);
+  color: rgb(255, 255, 179);
+  background: url(../Styles/images/landscapestars.jpg);
   background-size: cover;
   height: 100vh;
+}
+
+nav {
+  background: rgba(5, 5, 104, 0.659);
 }
