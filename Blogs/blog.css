@@ -96,8 +96,31 @@ a.active {
   }
 }
 
-h1{
+h1 {
   text-align: center;
+  text-transform: uppercase;
   text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(160, 217, 239);
 }
 
+li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a.activeblogs {
+  color: rgb(255, 255, 179);
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(43, 0, 255);
+  background: rgba(141, 168, 249, 0.844);
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
