@@ -43,9 +43,9 @@ a.active {
   border-radius: 50px;
 }
 
-#logo {
+.logo {
   width: 40px;
-  margin: 0 0 -10px -20px;
+  margin: 0 0 -14px -2px;
 }
 
 .menu-icon {
