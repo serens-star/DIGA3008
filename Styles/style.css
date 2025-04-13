@@ -1,16 +1,16 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(255, 255, 179);
-  background: rgb(1, 1, 37);
-  /*background: url(../Styles/images/landscapestars.jpg);*/
+  /*background: rgb(1, 1, 37);*/
+  background: url(../Styles/images/landscapestars.jpg);
   background-size: cover;
   height: 100vh;
 }
 
 nav {
   background: rgba(5, 5, 104, 0.659);
-  height: 70px;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -62,7 +62,7 @@ a.active {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .menu-icon {
     display: block;
   }
@@ -94,7 +94,37 @@ a.active {
   }
 }
 
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(160, 217, 239);
+}
 
-h1{
-  ;
+.u-photo {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h2 {
+  color: rgb(255, 255, 179);
+  text-align: center;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(43, 0, 255);
+  background: rgba(141, 168, 249, 0.844);
+  text-transform: uppercase;
+  margin-top: 60px;
+  letter-spacing: 3px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
