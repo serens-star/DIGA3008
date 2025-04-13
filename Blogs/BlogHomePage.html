@@ -8,30 +8,41 @@
     <meta name="description" content="Blog Home Page for DIGA3008." />
     <link rel="stylesheet" href="/Styles/normalize.css">
     <link rel="stylesheet" href="blog.css">
+    <script
+    src="https://kit.fontawesome.com/dbf0b8b048.js"
+    crossorigin="anonymous"
+  ></script>
+
   </head>
 
   <body>
     <section>
       <head>
         <nav>
+          <input type="checkbox" id="check-one" />
+      <label for="check-one" class="menu-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      
           <label for="logo" class="logo">Star Child</label>
-          <img src="/Styles/images/nobackgroundstar.png" id="starlogo" />
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Blogs/BlogHomePage.html">Blogs</a></li>
-          <li><a href="../Essays/Essays.html">Essay</a></li>
-          <li><a href="../Design/Design.html">Design</a></li>
-          <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+          <img src="/Styles/images/nobackgroundstar.png" class="starlogo" />
+          <ul>
+          <li><a href="../index.html" class="active">Home &#9956 </a></li>
+          <li><a href="../Blogs/BlogHomePage.html" class="active">Blogs &#9956 </a></li>
+          <li><a href="../Essays/Essays.html" class="active">Essay &#9956 </a></li>
+          <li><a href="../Design/Design.html" class="active">Design &#9956 </a></li>
+          <li><a href="../Portfolio/Portfolio.html" class="active">Portfolio &#9956 </a></li>
+        </ul>
         </nav>
       </head>
-      <header class="page header"><h2>Weekly Blog Posts</h2></header>
+      <header class="page header"><h1>Weekly Blog Posts</h1></header>
       
         </ul>
           <li><a href="Week1-BlogPost.html">Week 1 Blog Post</a></li>
           <li><a href="Week2-BlogPost.html">Week 2 Blog Post</a></li>
           <li><a href="Week 3-BlogPost.html">Week 3 Blog Post</a></li>
           <li><a href="Week 4-BlogPost.html">Week 4 Blog Post</a></li>
-      
-      </nav>
+    
     </section>
   </body>
 </html>
