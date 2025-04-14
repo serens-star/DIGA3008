@@ -2,28 +2,32 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="Portfolio.css" />
-
+    <link rel="stylesheet" href="/Styles/normalize.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Page</title>
+    <meta name="=author" content="Seren Mafunda" />
+    <meta
+      name="description"
+      content="A Page to show my profile and my work as a web designer, animator and writer."/>
   </head>
+
   <body>
-    <h1>This is an Experiment Page</h1>
-    <p>Blue Paragraph, 18px</p>
-    <ul>
-      <li>This is a list item with a square bullet point</li>
-      <li>This is a list item with a square bullet point</li>
-      <li>This is a list item with a square bullet point</li>
-    </ul>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
 
-    <ul class="navlinks">
-      <li><a href="#default">Default Link</a></li>
-
-      <li><a href="#hover">Hover Link</a></li>
-
-      <li><a href="#active">Active Link</a></li>
-
-      <li><a href="#visited">Visited Link</a></li>
-    </ul>
+      <label for="logo" class="logo">Star Child</label>
+      <img src="Styles/images/nobackgroundstar.png" class="starlogo" />
+      <ul>
+        <li><a href="index.html" class="active">Home &#9956 </a></li>
+        <li><a href="Blogs/BlogHomePage.html" class="active">Blogs &#9956 </a></li>
+        <li><a href="Design/Design.html" class="active">Design &#9956 </a></li>
+        <li><a href="Portfolio/Portfolio.html" class="active">Portfolio &#9956 </a></li>
+        <li><a href="Essays/Essays.html" class="active">Essays &#9956 </a></li>
+      </ul>
+    </nav>
   </body>
 </html>
