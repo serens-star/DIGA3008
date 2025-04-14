@@ -1,3 +1,8 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(255, 255, 179);
@@ -9,6 +14,9 @@ body {
 
 nav {
   background: rgba(5, 5, 104, 0.659);
+  padding-top: 0;
+  left: 0;
+  top: 0;
   max-width: 100%;
   height: auto;
 }
@@ -28,7 +36,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 12px;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 nav li a {
