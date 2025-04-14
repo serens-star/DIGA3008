@@ -9,6 +9,7 @@ body {
 
 nav {
   background: rgba(5, 5, 104, 0.659);
+  padding: 50px;
   max-width: 100%;
   height: auto;
 }
