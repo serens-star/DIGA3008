@@ -175,12 +175,21 @@ h3 {
   margin-left: 175px;
   margin-right: 175px;
   margin-top: 20px;
+  
 }
+
+.web-text{
+ position: relative;
+
+ 
+}
+
+
 
 footer {
   text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 100%;
+  /*margin-bottom: auto;*/
   font-size: 15px;
   letter-spacing: 2px;
 }
@@ -263,4 +272,47 @@ footer {
 .webImg-text a:hover {
   color: #881c28;
   transition: all ease 0.3s;
+}
+
+a.prev:link, a.prev:visited{
+  background-color:  blueviolet;
+  color: black;
+  font-weight:bolder;
+  padding: 8px 11px;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 12px ;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+a.prev:hover, a.prev:active{
+  background-color:rgb(93, 0, 180);
+  color: whitesmoke;
+}
+
+a.next:link, a.next:visited{
+  background-color:  blueviolet;
+  color: black;
+  font-weight:bolder;
+  padding: 8px 11px;
+  text-align: right;
+  text-decoration: none;
+  margin-top: 12px ;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+a.next{
+  float: right;
+ 
+}
+
+a.prev{
+  float: left;
+
+}
+
+/*ul.prev ul.next{
+  display: inline;
 }
