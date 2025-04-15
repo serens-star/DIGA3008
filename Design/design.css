@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(255, 255, 179);
+  /*background: rgb(1, 1, 37);*/
+  background: url(../Styles/images/landscapestars.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  background: rgba(5, 5, 104, 0.659);
+  padding-top: 0;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-size: 20px;
+  line-height: 70px;
+  margin: 0 15px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 20px;
+}
+
+nav li a {
+  font-size: 19px;
+  color: rgb(43, 0, 255);
+  text-decoration: none;
+}
+
+a.active {
+  background: rgb(160, 217, 239);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.starlogo {
+  width: 40px;
+  margin: 0 0 -14px -14px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: rgb(255, 255, 179);
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check-eight {
+  display: none;
+}
+
+#check-nine {
+  display: none;
+}
+
+#check-ten {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(5, 5, 104, 0.419);
+    /*backdrop-filter: blur;*/
+    height: 100vh;
+    text-align: center;
+    top: 60px;
+    display: block;
+    padding: 30px 0px;
+    left: -120%;
+    transition: all 1s;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 30px 0px;
+  }
+
+  nav li a {
+    font-size: 25px;
+    color: rgb(5, 5, 104);
+    text-transform: uppercase;
+  }
+
+  #check-eight:checked ~ ul {
+    left: 0;
+  }
+
+  #check-nine:checked ~ ul {
+    left: 0;
+  }
+
+  #check-ten:checked ~ ul {
+    left: 0;
+  }
+}
