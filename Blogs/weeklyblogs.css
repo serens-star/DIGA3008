@@ -136,3 +136,40 @@ a.active {
     left: 0;
   }
 }
+
+h1 {
+  margin-top: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(160, 217, 239);
+}
+
+h2 {
+  color: rgb(255, 255, 179);
+  text-align: center;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(43, 0, 255);
+  background: rgba(141, 168, 249, 0.844);
+  text-transform: uppercase;
+  margin-top: 60px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+  text-transform: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(160, 217, 239);
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-decoration-color: rgb(160, 217, 239);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
