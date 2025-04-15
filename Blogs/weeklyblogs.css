@@ -178,11 +178,10 @@ h3 {
   
 }
 
-.web-text{
- position: relative;
-
- 
-}
+/*.e-content{
+ display: grid;
+ grid-template-rows: auto auto;
+}*/
 
 
 
@@ -302,6 +301,12 @@ a.next:link, a.next:visited{
   border-radius: 15px;
   display: inline-block;
 }
+
+a.next:hover, a.next:active{
+  background-color:rgb(93, 0, 180);
+  color: whitesmoke;
+}
+
 
 a.next{
   float: right;
