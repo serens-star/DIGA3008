@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  main {
+    flex: 1;
+  }
+
 body{
     font-family: Georgia, "Times New Roman", Times, serif;
     color: rgb(255, 255, 179);
@@ -209,7 +213,7 @@ h1{
     padding: 40px;
   }
 
-  .portfolio-container{
+  /*.portfolio-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,8 +291,123 @@ h1{
     .portdolio-text a:hover{
     color:#881c28;
     transition: all ease 0.3s;
+    }*/
+
+    .gallery {
+      display: flex;
+      margin-top: 2rem;
     }
     
+    .centerGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      grid-template-rows: repeat(3, 2fr);
+      gap: 0.3rem;
+      width: 100%;
+      max-width: px;   
+      height: 360px;      
+      margin: 2rem auto;
+    }
+
+    .centerGridImg, .centerGrid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: none;
+      background: #3166f7;
+      display: block;
+    }
+
+    .centerGridImg img,
+.centerGrid img {
+  transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+}
+
+.centerGridImg img:hover,
+.centerGrid img:hover {
+  transform: scale(1.15);
+  z-index: 2;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.centerGridImg {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #5940cc;
+}
+
+.centerGridImg img {
+  width: 100%;
+  height: auto;         
+  aspect-ratio: 1/1;   
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: none;
+  display: block;
+}
+
+.centerGridImg figcaption {
+  margin-top: 0.35em;
+  font-size: 0.95em;
+  color: #edfb51;
+  text-align: center;
+  background: transparent;
+  padding: 0.2em 0 0.4em 0;
+}
+
+.out {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;                                           
+  color: white;
+  text-align: center;
+}
+
+#lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-img {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+}
+
+#lightbox-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
     footer {
         text-align: center;
         margin-top: 550px;
