@@ -104,6 +104,7 @@ a.active {
 }
 
 h1 {
+  margin-top: 15px;
   text-align: center;
   text-shadow: 1px 1px 1px white, 2px 2px 2px rgb(160, 217, 239);
 }

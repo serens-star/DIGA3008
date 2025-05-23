@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(255, 255, 179);
   /*background: rgb(1, 1, 37);*/
   background: url(../Styles/images/landscapestars.jpg);
   background-size: cover;
-  height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 nav {
@@ -184,7 +194,6 @@ a.prev:link, a.prev:visited{
   padding: 8px 11px;
   text-align: left;
   text-decoration: none;
-  margin-top: 100% ;
   border-radius: 15px;
   display: inline-block;
 }
@@ -201,7 +210,6 @@ a.next:link, a.next:visited{
   padding: 8px 11px;
   text-align: right;
   text-decoration: none;
-  margin-top: 100% ;
   border-radius: 15px;
   display: inline-block;
 }
@@ -323,7 +331,7 @@ a.prev{
 
 footer {
   text-align: center;
-  margin-top:1000px;
+  margin-top:auto;
   /*margin-bottom: auto;*/
   font-size: 15px;
   letter-spacing: 2px;
