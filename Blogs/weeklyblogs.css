@@ -98,6 +98,26 @@ a.active {
   display: none;
 }
 
+#check-eight {
+  display: none;
+}
+
+#check-nine {
+  display: none;
+}
+
+#check-ten {
+  display: none;
+}
+
+#check-eleven {
+  display: none;
+}
+
+#check-twelve {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .menu-icon {
     display: block;
@@ -144,6 +164,26 @@ a.active {
   }
 
   #check-seven:checked ~ ul {
+    left: 0;
+  }
+
+  #check-eight:checked ~ ul {
+    left: 0;
+  }
+
+  #check-nine:checked ~ ul {
+    left: 0;
+  }
+
+  #check-ten:checked ~ ul {
+    left: 0;
+  }
+
+  #check-eleven:checked ~ ul {
+    left: 0;
+  }
+
+  #check-twelve:checked ~ ul {
     left: 0;
   }
 }
